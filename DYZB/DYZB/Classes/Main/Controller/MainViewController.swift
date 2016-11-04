@@ -26,10 +26,6 @@ class MainViewController: UITabBarController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     func addChildVc(storyName:String) {
         //1.通过toryboard获取控制器
         let childVc = UIStoryboard(name: storyName, bundle: nil).instantiateInitialViewController()!
