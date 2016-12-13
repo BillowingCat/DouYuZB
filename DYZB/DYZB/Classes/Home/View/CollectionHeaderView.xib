@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-3O-ZKZ">
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Rzs-NP-9Ue"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Ab6-ue-o7l"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盐值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTV-Ia-5vT">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiF-gA-tfk">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="rWO-kj-iXx"/>
+                    </constraints>
+                    <state key="normal" title="更多&gt;">
+                        <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TTV-Ia-5vT" firstAttribute="leading" secondItem="Ab6-ue-o7l" secondAttribute="trailing" constant="5" id="8XB-iT-vPA"/>
+                <constraint firstItem="TTV-Ia-5vT" firstAttribute="centerY" secondItem="Ab6-ue-o7l" secondAttribute="centerY" id="9c8-kE-Uhy"/>
+                <constraint firstAttribute="trailing" secondItem="Zfa-3O-ZKZ" secondAttribute="trailing" id="Jxm-FK-NZD"/>
+                <constraint firstAttribute="trailing" secondItem="WiF-gA-tfk" secondAttribute="trailing" constant="10" id="Pxf-S4-azm"/>
+                <constraint firstItem="Ab6-ue-o7l" firstAttribute="top" secondItem="Zfa-3O-ZKZ" secondAttribute="bottom" constant="11" id="QVm-Bg-Lkw"/>
+                <constraint firstItem="WiF-gA-tfk" firstAttribute="top" secondItem="Zfa-3O-ZKZ" secondAttribute="bottom" constant="5" id="TYT-fp-1YU"/>
+                <constraint firstItem="Zfa-3O-ZKZ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="j1K-VE-liv"/>
+                <constraint firstAttribute="bottom" secondItem="WiF-gA-tfk" secondAttribute="bottom" constant="5" id="kqs-Id-K1f"/>
+                <constraint firstItem="Ab6-ue-o7l" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="xai-W3-9mN"/>
+                <constraint firstItem="Zfa-3O-ZKZ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="zC4-Mb-Rs2"/>
+            </constraints>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_header_phone" width="18" height="18"/>
+    </resources>
+</document>
